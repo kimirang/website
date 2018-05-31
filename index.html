@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+<title>PORTFOLIO</title>
+
+<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Pacifico" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['page01', 'page02', 'page03','page04','page05','footer'],
+				sectionsColor: ['#fff'],
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+				afterLoad: function(anchorLink, index){
+                    var loadedSection = $(this);
+
+                    //앵커링크 사용
+                    if(anchorLink == 'page01'){
+                        $('#return-to-top').css('display','none')
+                    }else{
+                       $('#return-to-top').css('display','block') 
+                    }
+                }
+			}); 
+            $(document).ready(function () {
+                $('#fullpage').fullpage();
+
+                // The changes that were made
+
+                $('.fp-prev').append('<i class="fas fa-angle-left"></i>');
+                $('.fp-next').append('<i class="fas fa-angle-right"></i>');
+
+                
+                //button
+                $(".moreBtn1 a").click(function() {
+                    var elem = $(".moreBtn1 a").text();
+                    if (elem == "view more") {
+                      //Stuff to do when btn is in the read more state
+                      $(".moreBtn1 a").text("view less");
+                      $(".port1 .gnb2").slideDown();
+                    } else {
+                      //Stuff to do when btn is in the read less state
+                      $(".moreBtn1 a").text('view more');
+                      $(".port1 .gnb2").slideUp();
+                    }
+                  });
+                $(".moreBtn2 a").click(function() {
+                    var elem = $(".moreBtn2 a").text();
+                    if (elem == "view more") {
+                      //Stuff to do when btn is in the read more state
+                      $(".moreBtn2 a").text("view less");
+                      $(".port2 .gnb2").slideDown();
+                    } else {
+                      //Stuff to do when btn is in the read less state
+                      $(".moreBtn2 a").text('view more');
+                      $(".port2 .gnb2").slideUp();
+                    }
+                  });
+            });
+            $(".menu-btn").click(function() {
+                $(".menu-btn").toggleClass("disBtn");
+
+                $(".cross-btn").toggleClass("enCross");
+
+                $('.menu-panel').toggleClass('showPanel');
+              });
+		});
+        $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+	</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile_style.css"/>
+</head>
+<body>
+    <section class="sec1">
+        <div class="menu-btn"><span class="lnr lnr-menu"></span></div>
+        <div class="cross-btn"><span class="lnr lnr-cross"></span></div>
+        <div class="menu-panel">
+            <ul>
+                <li><a href="#page02"><p class="nav-item">About</p></a></li>
+                <li><a href="#page03"><p class="nav-item">Profile</p></a></li>
+                <li><a href="#page04"><p class="nav-item">Portfolio_W</p></a></li>
+                <li><a href="#page05"><p class="nav-item">Portfolio_G</p></a></li>
+                <li><a href="#footer"><p class="nav-item">Centact</p></a></li>
+            </ul>
+        </div>
+    </section>
+    <div id="fullpage">
+        <!--메인페이지시작-->
+	   <div class="section fp-auto-height-responsive" id="section0">
+        <!--헤더시작-->
+           <header class="header cf">
+               <h1>
+                   <a href="index.html">
+                   <img src="../img/logo_1.png"/>
+                   </a>
+               </h1>
+                  <section class="sec1" id="section2"></section>
+                  <section class="sec1"></section>
+               <div class="topMenu cf">
+                   <div class="menu_1">
+                       <a href="page02">About</a>
+                       <ul class="gnb cf">
+                           <li data-menuanchor="secondPage"><a href="#page02">about me</a></li>
+                           <li><a href="#page03">work&#38;skill</a></li>
+                       </ul>
+                   </div>
+                   <div class="menu_2">
+                       <a href="#page04">Portfolio</a>
+                       <ul class="gnb">
+                           <li><a href="#page04">web design</a></li>
+                           <li><a href="#page05">graphic design</a></li>
+                       </ul>
+                   </div>
+                   <div class="menu_3">
+                       <a href="#footer">Contact</a>
+                   </div>
+              </div>
+            </header>
+        <!--메인이미지시작-->
+           <div class="mainImg"></div>
+           <div class="mImg2">
+               <span>Hello, I'm 이랑</span>
+                <p>Nothing Ventured,<br/> Nothing Gained</p>
+           </div>
+        </div>
+        <!--프로필 시작-->
+        <div class="section" id="section1">
+            <div class="bg1"></div>
+            <div class="profile">
+                <div class="left_bar"></div>
+                <h2>
+                    <span>profile</span>
+                    ABOUT ME
+                </h2>
+                <div class="file_box">
+                    <div class="picture"></div>
+                    <div class="text">
+                        <p>김이랑</p>
+                        <p>1993.02.02</p>
+                        <p>자기소개부분</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!--경험 시작-->
+        <div class="section" id="section2">
+            <div class="bg2"></div>
+	       <div class="slide" id="slide1">
+               <div class="profile2 bar_right cf">
+                    <div class="right_bar"></div>
+                       <h2>
+                           <span>profile</span>
+                        WORK&#38;SKILL
+                        </h2>
+                    <div class="file_box">   
+                        <div class="ws_width work">
+                            <p></p>
+                            <h5>
+                                WORK EXPRIENCE
+                                <a href="in_work.html">
+                                    <i class="fas fa-angle-right"></i>
+                                </a>
+                            </h5>
+                                <ul class="work_1">
+                                    <li>2011 동명대 산업디자인과 입학</li>
+                                    <li>2011,2013 D2B디자인페어 특강</li>
+                                    <li>2013.12월-2014.1월 디자인큐브 실습</li>
+                                    <li>2014.3-9월 캡스톤디자인 실습</li>
+                                    <li>2016 동명대 산업디자인과 졸업</li>
+                                    <li>2016.3월-2017.8월 디자인마음 재직</li>
+                                </ul>
+                            </div>
+                            <div class="ws_width prize">
+                                <p></p>
+                                <h5>
+                                    PRIZE&#38;LICENSE
+                                    <a href="in_work.html"><i class="fas fa-angle-right"></i></a></h5>
+                                <ul class="prize_1">
+                                    <li>2013 D2B디자인페어 입선</li>
+                                    <li>2014 POP글씨2급 자격증</li>
+                                    <li>2015 컴퓨터그래픽스 자격증</li>
+                                    <li>2015 부산미술대전 입선</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="profile3">
+                    <h2>
+                        <span>profile</span>
+                        WORK&#38;SKILL
+                    </h2>
+                    <div class="file_box">
+                        <div class="skill cf">
+                            <div>
+                                <p></p>
+                                photoshop&#47;illustrator의 그래픽 툴를 사용하여 이미지를 꾸미고 수정하거나 아이콘과 캐릭터를 만들 수 있습니다.
+                            </div>
+                            <div>
+                                <p></p>
+                                하나의 디자인을 만들기 위해 디자인을 구상하고 필요한 자료 수집을 통해 스토리텔링할 수 있습니다.
+                            </div>
+                            <div>
+                                <p></p>
+                                웹 표준 기본 레이아웃을 이해하고 html 5&#47;css 를 이용하여 간단한 웹 사이트 구현을 할 수 있습니다.
+                            </div>
+                            <div>
+                                <p>ProgramSkill</p>
+                                <dl class="cf">
+                                    <dt>Photoshop</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>Illustrator</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>3D MAX</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>Powerpoint</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="programSkill">
+                            <h5>ProgramSkill</h5>
+                            <div class="skill_box">
+                                <dl class="cf">
+                                    <dt>Photoshop</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>Illustrator</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>3D MAX</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                                <dl class="cf">
+                                    <dt>Powerpoint</dt>
+                                    <dd>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_on"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                        <span class="skillBox_off"></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	   </div>
+        <!--포폴1 시작-->
+        <div class="section" id="section3">
+            <div class="bg1"></div>
+            <div class="moreBtn">
+                    <a href="in_portfolio.html">
+                        <img src="../img/main_moreBtn1.png"/>
+                    </a>
+                </div>
+            <div class="portfolio">
+                <div class="left_bar"></div>
+                <h2>
+                    <span>portfolio</span>
+                    WEB DESIGN
+                </h2>
+                <div class="file_box">
+                    <div class="port1">
+                        <ul class="gnb1 cf">
+                        <li><a href="#">box1</a></li>
+                        <li><a href="#">box2</a></li>
+                        <li><a href="#">box3</a></li>
+                    </ul>
+                    <ul class="gnb2 cf">
+                        <li><a href="#">box4</a></li>
+                        <li><a href="#">box5</a></li>
+                        <li><a href="#">box6</a></li>
+                    </ul>
+                    </div>
+                    <div class="moreBtn1"><a href="#">view more</a></div>
+                </div>
+            </div>
+        </div>
+            <!--포폴2 시작-->
+        <div class="section" id="section4">
+            <div class="bg2"></div>
+            <div class="moreBtn0">
+                    <a href="in_portfolio_gra.html">
+                        <img src="../img/main_moreBtn1.png"/>
+                    </a>
+                </div>
+            <div class="portfolio bar_right">
+                <div class="right_bar"></div>
+                <h2>
+                    <span>portfolio</span>
+                    GRAPHIC DESIGN
+                </h2>
+                <div class="file_box">
+                    <div class="port2">
+                        <ul class="gnb1 cf">
+                        <li><a href="#">box1</a></li>
+                        <li><a href="#">box2</a></li>
+                        <li><a href="#">box3</a></li>
+                    </ul>
+                    <ul class="gnb2 cf">
+                        <li><a href="#">box4</a></li>
+                        <li><a href="#">box5</a></li>
+                        <li><a href="#">box6</a></li>
+                    </ul>
+                    </div>
+                    <div class="moreBtn2"><a href="#">view more</a></div>
+                </div>
+            </div>
+        </div>
+    <div class="section fp-auto-height" id="section5">
+		<div class="contact">
+			<h1>CONTACT</h1>
+            <div class="conBox">
+                <dl>
+                    <dt>CALL</dt>
+                    <dd>010&#45;9179&#45;2823</dd>
+                </dl>
+                <dl>
+                    <dt>MAIL</dt>
+                    <dd>dlfkdrla93@naver.com</dd>
+                </dl>
+                <dl>
+                    <dt>BLOG</dt>
+                    <dd>www.blog.naver.com/dlfkdrla93</dd>
+                </dl>
+            </div>
+		</div>
+	</div>
+    
+</div>
+<a href="#page01" id="return-to-top"><i class="icon-chevron-up"></i></a>
+</body>
+</html>
