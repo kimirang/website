@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{font-family: 'Lato', sans-serif; margin: 0; padding: 0;}
+h1,h2,h3,h4,h5{margin: 0; padding: 0;}
+ul{list-style: none; padding: 0; margin: 0}
+a{text-decoration-line: none; color: #000;}
+p{margin: 0;}
+.cf:after{content: ""; display: block; clear: both;}
+.w1200{width: 1200px; margin: 0 auto;}
+.file_box{padding-top: 15%;}
+h2{
+    display: block;
+    padding-top: 30px;
+    line-height: 24px;
+}
+h2 span{
+    display: block;
+    font-family: 'Pacifico', cursive; 
+    color: RGBA(103,113,64,0.7); 
+    letter-spacing: 1.5px; 
+    font-size: 45px;
+    padding-left: 30px;
+}
+.bar_right h2 span{
+    padding-right: 30px;
+}
+.left_bar{
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #97a759;
+}
+.right_bar{
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #97a759;
+    float: right;
+}
+/*헤더메뉴*/
+.header{
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 45px 0;
+    vertical-align: top;
+}
+.header h1{
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-left: 7%;
+}
+.header h1 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.header h1 a img{
+    width: 100%;
+    height: 100%;
+}
+.header .m_Menu, .sec1{
+    display: none;
+}
+.sidenav{display: none;}
+.topMenu{
+    float: right;
+    text-align: center;
+    }
+.header .topMenu div{
+    display: block;
+    float: left;
+    width: 100px;
+}
+.header .topMenu div a{
+    vertical-align: middle;
+    display: block;
+    padding: 15px 0;
+}
+.header .topMenu div:hover .gnb{
+    display: block;
+}
+.topMenu{
+    position: relative;
+}
+.topMenu div .gnb{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.topMenu div .gnb li{
+    text-align: center;
+    width: 110px;
+    display: inline-block;
+}
+.topMenu .menu_1 .gnb li a{}
+/*메인이미지*/
+.mainImg{
+    width: 81%;
+    height: 70%;
+    float: right;
+    background: url(/portfolio/img/main_image.jpg)no-repeat;
+    background-size: 100%;
+}
+.mImg2{
+    display: block;
+    padding: 4% 5%;
+    background: RGBA(67,67,67,0.8);
+    font-weight: 800;
+    line-height: 60px;
+    font-size: 30px;
+    color: #98a759;
+    text-align: left;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+}
+.mImg2 p:before{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #fff;
+    margin-bottom: 13px;
+}
+.mImg2 span{
+    display: none;
+}
+/*프로필시작*/
+.section{
+    width: 100%;
+    position: relative;
+}
+.bg1{
+    width: 30%;
+    height: 100%;
+    background: #f4f7e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+.bg2{
+    width: 30%;
+    height: 100%;
+    background: #f4f7e0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -100;
+}
+.profile{
+    display: block;
+    padding: 0 19%;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+.profile .file_box div{
+    width: 50%;
+    height: 400px;
+    float: left;
+    text-align: center;
+}
+.profile .file_box .picture{
+    background: url(/portfolio/img/profile_pic.jpg)no-repeat;
+    background-size: 100%;
+}
+
+/*3page slide1*/
+.profile2{
+    padding: 0 19%;
+    padding-top: 10%;
+    text-align: right;
+}
+.profile2 .ws_width{
+    width: 50%;
+    height: 400px;
+    text-align: center;
+    float: left;
+}
+.ws_width i{display: none;}
+h5{font-size: 20px;}
+.profile2 div p{
+    width: 70px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: url(/portfolio/img/work_icon2.png)no-repeat;
+    background-size: cover;
+}
+.profile2 div ul{}
+.profile2 div ul li{
+    margin-top: 10px;
+}
+.profile2 .prize p{
+    background-position: -74px 0;
+}
+
+/*3page slide2*/
+.profile3{
+    padding: 0 19%;
+    padding-top: 10%;
+}
+/*slide2 1box*/
+.skill{
+    width: 100%;
+    margin: 0 auto;
+}
+.skill div{
+    text-align: center;
+    width: calc(34.3% - 30px);
+    float: left;
+    margin-right: 30px;
+}
+.skill div p{
+    width: 70px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background: url(/portfolio/img/work_icon2.png)no-repeat;
+    background-size: cover;
+}
+.skill div:nth-child(1) p{
+    background-position: -144px 0;
+}
+.skill div:nth-child(2) p{
+    background-position: -216px 0;
+}
+.skill div:nth-child(3) p{
+    background-position: -300px 0;
+}
+.skill div:last-child{display: none;}
+.skill div:nth-child(3){
+    margin-right: 0;
+}
+/*slide2 2box*/
+.programSkill{
+    text-align: center;
+    padding-top: 50px;
+}
+.programSkill .skill_box{
+    margin-top: 30px;
+}
+.programSkill dl{
+    width: 50%;
+    float: left;
+}
+.programSkill dl dt{
+    width: 100px;
+    float: left;
+    padding-left: 50px;
+}
+/*2slide의 스킬박스*/
+.skillBox_on{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #53543c;
+    border: 2px solid #53543c;
+}
+.skillBox_off{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border: 2px solid #53543c;
+}
+
+/*4page 포트폴리오1*/
+.portfolio{
+    padding: 0 19%;
+    padding-top: 10%;
+}
+.moreBtn{
+    position: absolute;
+    right: 19%;
+    top: 15%;
+}
+.moreBtn0{
+    position: absolute;
+    left: 19%;
+    top: 15%;
+}
+.moreBtn0 a,.moreBtn a{
+    display: block;
+}
+
+
+
+.port1 ul li{
+    float: left;
+   width: calc(33.333% - 0.5em);
+    height: 200px;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+    background: RGBA(112,112,114,1);    
+}
+.port1 ul li:nth-child(3n){
+    margin-right: 0;
+}
+.port1 ul li a{
+    display: block;
+}
+
+.port1 .gnb2{
+display:none;
+}
+.moreBtn1{
+    height:44px;
+    width:200px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 auto;
+    border: 2px solid #dbdb8e;
+}
+.moreBtn1 a{
+    display: block;
+    padding: 11px;
+}
+a:active{
+  color:#000;
+}
+button{
+  user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  background: #000;
+  box-sizing:border-box;
+}
+
+.port2 ul li{
+    float: left;
+    width: 32%;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+    height: 200px;
+    background: RGBA(112,112,114,1);
+}
+.port2 ul li:nth-child(3n){
+    margin-right: 0;
+}
+.port2 ul li a{
+    display: block;
+}
+
+.port2 .gnb2{
+display:none;
+}
+.bar_right{
+    text-align: right;
+}
+.moreBtn2{
+    height:44px;
+    width:200px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0 auto;
+    border: 2px solid #dbdb8e;
+}
+.moreBtn2 a{
+    display: block;
+    padding: 11px;
+}
+
+.contact{
+    width: 100%;
+    margin: 0;
+    height: 120px;
+    padding: 50px 0;
+    text-align: center;
+    background: #e4e4e4;
+    box-sizing: content-box;
+    font-size: 0;
+}
+.contact h1{
+    display: inline-block;
+    height: 120px;
+    font-size: 30px;
+}
+.contact h1:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 120px;
+    background: #636363;
+    margin: 0 25px;
+    vertical-align: middle;
+}
+.contact .conBox{
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+.contact .conBox dl{
+    width: 410px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact .conBox dl dt{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+}
+.contact .conBox dl dd{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 20px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 9px;
+    top: 10px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+#m_section{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

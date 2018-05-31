@@ -1,0 +1,315 @@
+@media screen and (max-width:768px){
+    body{display: block;}
+    #fp-nav{display: none;}
+    .fp-tableCell {
+    vertical-align: middle;
+}
+    html, body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .header{
+        width: 100%;
+        height: 10%;
+        padding: 3% 0;
+    }
+    .header h1{
+        width: 45px;
+        height: 45px;
+        line-height: 9%;
+    }
+    .header .topMenu{
+        position: static; 
+        display: none;
+    }
+    .header .m_Menu{display: block;}
+
+    .sec1 {
+        display: block;
+      background-size:cover;
+      position: relative;
+    }
+    /*menu button*/
+    .menu-btn {
+      position: fixed;
+      right: 5%;
+      top: 0.5em;
+      font-size: 2.5em;
+      color: #000;
+      opacity:1;
+      z-index: 999;
+      transition: all 0.2s ease;
+    }
+
+    .menu-btn:hover {
+      cursor: pointer;
+    }
+    /*cross button*/
+    .cross-btn{
+      position: fixed;
+      right: 5%;
+      top: 0.5em;
+      font-size: 2.5em;
+      color: #fff;/*pale yello*/
+      opacity:0;
+      z-index: 899;
+      transition: all 0.2s ease;
+    }
+
+    .menu-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: rgba( 113,129,91,1);
+        z-index: 799;
+        transition:all 0.5s;
+    }
+
+    .menu-panel ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+        width: 200px;
+        margin:0 auto;
+        height: 100%;
+        left: 50%;
+        top: 10%;
+        overflow:hidden;
+        padding-top:150px;
+    }
+
+    /* li contains p, provide fixed height for each item, prevent fluctuating padding add/disable animation*/
+    .menu-panel ul li {}
+
+    .menu-panel ul li p {
+      margin: 0;
+      font-size: 1.5em;
+      padding-bottom: 10%;
+    }
+    /*link style*/
+
+    .menu-panel ul li a:link {
+      color: #f4f7e1;/*teal*/
+      text-decoration: none;
+      transition: all 0.1s ease;
+    }
+
+    .menu-panel ul li a:visited {
+      color: #fff;/*teal*/
+    }
+
+    .menu-panel ul li a:hover {
+      color: #f4f7e1;/*pale yello*/
+      font-size: 1.05em;
+    }
+
+    .disBtn{
+      opacity:0;
+    }
+    .enCross{
+      opacity:1;
+    }
+    .showPanel{
+      width:50%;
+    }
+
+    #section2 {
+        background-image: url("http://barnimages.com/wp-content/uploads/2015/11/2015-11-24-Igor-Trepeshchenok-Barnimages-4-1024x683.jpg");
+    }
+
+    
+    /*메인 이미지*/
+    .section .mainImg{
+        width: 100%;
+        height: 90%;
+        background-size: cover;
+        background-position: center;
+    }
+    .section .mImg2{
+        width: 100%;
+        left: 50%;
+        bottom: 20%;
+        margin-left: -55%;
+        text-align: center;
+    }
+    .section .mImg2 span{
+        display: block;
+        color: #fff;
+        padding-bottom: 70px;
+        font-family: 'East Sea Dokdo', cursive;
+        font-weight: 400;
+        font-size: 50px;
+    }
+    .section .mImg2 p{
+        line-height: 30px;
+        font-size: 22px;
+    }
+    .section .mImg2 p:before{
+        width: 100px;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        margin-left: -50px;
+        
+    }
+    
+    /*카테고리*/
+    #section1 .bg1,#section2 .bg2,#section3 .bg1,#section4 .bg2{ display: none;}
+    #section3 .moreBtn1,#section4 .moreBtn2{ display: none;}
+    .fp-controlArrow.fp-next, .fp-controlArrow.fp-prev{display:none;}
+    #section1 h2, #section2 h2, #section3 h2, #section4 h2{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #section1, #section3{
+        background: #f4f7e1;
+    }
+    .section h2 span{
+        color: RGBA(152,166,64,0.7);
+    }
+    .left_bar, .right_bar{
+        display: none;
+    }
+    .profile .file_box div{
+        width: 100%;
+        text-align: center;
+    }
+    .profile .file_box .picture{
+        height: 200px;
+        background-size: 200px;
+        background-position: center center;
+    }
+    .profile .file_box .text{
+        padding-top: 10%;
+        height: auto;
+    }
+    
+    .profile2{
+        padding: 0;
+        padding-top: 10%;
+    }
+    .profile2 .file_box ul{
+        display: none;
+    }
+    .profile2 .file_box div{
+        display: block;
+        width: 100%;
+        height: 100px;
+        padding: 55px 0;
+        font-size: 20px;
+        background: #f4f7e1;
+    }
+    .profile2 .file_box .prize{
+        margin-top: 10%;
+    }
+    .ws_width i{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    #slide2{display: none;}
+    .portfolio{
+        padding: 0;
+        padding-top: 10%;
+    }
+    .portfolio .file_box .port1 ul li{
+        width: 90%;
+        height: 150px;
+        margin: 0.5em 5%;
+    } 
+    .portfolio .file_box .port2 ul li{
+        width: 90%;
+        height: 150px;
+        margin: 0.5em 5%;
+    } 
+    #section4 .moreBtn{right:auto;}
+    #section3 .moreBtn, #section4 .moreBtn0{
+        left: 7%;
+        top: 8%;
+    }
+    
+.contact{
+    width: 100%;
+    margin: 0;
+    height: 150px;
+    padding: 30px 0;
+    text-align: center;
+    background: #e4e4e4;
+    font-size: 0;
+}
+.contact h1{
+    display: block;
+    height: 30px;
+    font-size: 20px;
+}
+.contact h1:after{
+    display: none;
+}
+.contact .conBox{
+    margin-top: 10px;
+    text-align: center;
+}
+.contact .conBox dl{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.contact .conBox dl dt{
+    display: block;
+    font-size: 15px;
+}
+.contact .conBox dl dd{
+    display: block;
+    font-size: 13px;
+}
+
+#m_section{
+    display: block;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
