@@ -101,7 +101,7 @@ h2 span{
     width: 81%;
     height: 70%;
     float: right;
-    background: url(/portfolio/img/main_image.jpg)no-repeat;
+    background: url("../img/main_image.jpg")no-repeat;
     background-size: 100%;
 }
 .mImg2{
@@ -164,7 +164,7 @@ h2 span{
     text-align: center;
 }
 .profile .file_box .picture{
-    background: url(/portfolio/img/profile_pic.jpg)no-repeat;
+    background: url("../img/profile_pic.jpg")no-repeat;
     background-size: 100%;
 }
 
@@ -187,7 +187,7 @@ h5{font-size: 20px;}
     height: 60px;
     margin: 0 auto;
     margin-bottom: 15px;
-    background: url(/portfolio/img/work_icon2.png)no-repeat;
+    background: url("../img/work_icon2.png")no-repeat;
     background-size: cover;
 }
 .profile2 div ul{}
@@ -219,7 +219,7 @@ h5{font-size: 20px;}
     height: 60px;
     margin: 0 auto;
     margin-bottom: 15px;
-    background: url(/portfolio/img/work_icon2.png)no-repeat;
+    background: url("../img/work_icon2.png")no-repeat;
     background-size: cover;
 }
 .skill div:nth-child(1) p{
