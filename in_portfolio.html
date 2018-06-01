@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" /> 
+<title>PORTFOLIO WEB</title>
+
+<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Pacifico" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#fff'],
+				afterResponsive: function(isResponsive){
+					
+				}
+
+			}); 
+            $(document).ready(function () {
+                $('#fullpage').fullpage();
+
+                // The changes that were made
+
+                $('.fp-prev').append('<i class="fas fa-angle-left"></i>');
+                $('.fp-next').append('<i class="fas fa-angle-right"></i>');
+                
+                //button
+            });
+
+            $(window).on('load', function () {
+                load('#js-load', '6');
+                $("#js-btn-wrap .button").on("click", function () {
+                    load('#js-load', '3', '#js-btn-wrap');
+                })
+            });
+
+            function load(id, cnt, btn) {
+                var girls_list = id + " .js-load:not(.active)";
+                var girls_length = $(girls_list).length;
+                var girls_total_cnt;
+                if (cnt < girls_length) {
+                    girls_total_cnt = cnt;
+                } else {
+                    girls_total_cnt = girls_length;
+                    $(button).hide();
+                }
+                $(girls_list + ":lt(" + girls_total_cnt + ")").addClass("active");
+            }
+            $(".menu-btn").click(function() {
+                $(".menu-btn").toggleClass("disBtn");
+
+                $(".cross-btn").toggleClass("enCross");
+
+                $('.menu-panel').toggleClass('showPanel');
+              });
+
+		});
+        
+            $('#return-to-top').click(function() {      // When arrow is clicked
+            $('body,html').animate({
+                scrollTop : 0                       // Scroll to top of body
+            }, 500);
+        });
+	</script>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile_style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/in_portfolio.css"/>
+</head>
+<body>
+    <section class="sec1">
+        <div class="menu-btn"><span class="lnr lnr-menu"></span></div>
+        <div class="cross-btn"><span class="lnr lnr-cross"></span></div>
+        <div class="menu-panel">
+            <ul>
+                <li><a href="/portfolio/html_3/index.html#page02"><p class="nav-item">About</p></a></li>
+                <li><a href="in_work.html"><p class="nav-item">Profile</p></a></li>
+                <li><a href="in_portfolio.html"><p class="nav-item">Portfolio_W</p></a></li>
+                <li><a href="in_portfolio_gra.html"><p class="nav-item">Portfolio_G</p></a></li>
+            </ul>
+        </div>
+    </section>
+        <!--메인페이지시작-->
+        <!--헤더시작-->
+           <header class="header cf">
+               <h1>
+                   <a href="index.html">
+                   <img src="img/logo_1.png"/>
+                   </a>
+               </h1>
+                  <section class="sec1" id="section2"></section>
+                  <section class="sec1"></section>
+               <div class="topMenu cf">
+                   <div class="menu_1">
+                       <a href="../html_3/index.html#page02">About</a>
+                       <ul class="gnb cf">
+                           <li data-menuanchor="secondPage">
+                               <a href="../html_3/index.html#page02">about me</a>
+                           </li>
+                           <li><a href="../html_3/index.html#page03">work&#38;skill</a></li>
+                       </ul>
+                   </div>
+                   <div class="menu_2">
+                       <a href="../html_3/index.html#page04">Portfolio</a>
+                       <ul class="gnb">
+                           <li><a href="../html_3/index.html#page04">web design</a></li>
+                           <li><a href="../html_3/index.html#page05">graphic design</a></li>
+                       </ul>
+                   </div>
+                   <div class="menu_3">
+                       <a href="../html_3/index.html#footer">Contact</a>
+                   </div>
+              </div>
+            </header>
+        <!--포폴1 시작-->
+            <div class="portfolio">
+                <div class="bg1"></div>
+                <div class="left_bar"></div>
+                <h2>
+                    <span>portfolio</span>
+                    WEB DESIGN
+                </h2>
+                <div class="file_box cf">
+                    <div id="contents">
+                        <div id="js-load" class="main">
+                            <ul class="lists cf">
+                                <li class="lists__item js-load">test1</li>
+                                <li class="lists__item js-load">test2</li>
+                                <li class="lists__item js-load">test3</li>
+                                <li class="lists__item js-load">test4</li>
+                                <li class="lists__item js-load">test5</li>
+                                <li class="lists__item js-load">test6</li>
+                                <li class="lists__item js-load">test7</li>
+                                <li class="lists__item js-load">test8</li>
+                                <li class="lists__item js-load">test9</li>
+                                <li class="lists__item js-load">test10</li>
+                                <li class="lists__item js-load">test11</li>
+                                <li class="lists__item js-load">test12</li>
+                                <li class="lists__item js-load">test13</li>
+                                <li class="lists__item js-load">test14</li>
+                                <li class="lists__item js-load">test15</li>
+                            </ul>
+                            <div id="js-btn-wrap" class="btn-wrap">
+                                <a href="javascript:;" class="button">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	   </div>
+    <div class="section fp-auto-height" id="section5">
+		<div class="contact">
+			<h1>CONTACT</h1>
+            <div class="conBox">
+                <dl>
+                    <dt>CALL</dt>
+                    <dd>010&#45;9179&#45;2823</dd>
+                </dl>
+                <dl>
+                    <dt>MAIL</dt>
+                    <dd>dlfkdrla93@naver.com</dd>
+                </dl>
+                <dl>
+                    <dt>BLOG</dt>
+                    <dd>www.blog.naver.com/dlfkdrla93</dd>
+                </dl>
+            </div>
+		</div>
+	</div>
+<a href="#page01" id="return-to-top"><i class="icon-chevron-up"></i></a>
+</body>
+</html>
